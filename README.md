@@ -1,5 +1,5 @@
 
-# GSTLIAN - Hanquan blockchain-based operating system
+# GST CHAIN - blockchain-based operating system
  
 Welcome to the GSTLIAN source code repository! 
 
