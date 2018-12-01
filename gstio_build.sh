@@ -1,7 +1,7 @@
 #!/bin/bash
 ##########################################################################
 # This is the GSTIO automated install script for Linux and Mac OS.
-# This file was downloaded from https://github.com/GSTIO/gst
+# This file was downloaded from https://github.com/a6lian/gstlian
 #
 # Copyright (c) 2017, Respective Authors all rights reserved.
 #
@@ -27,7 +27,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 #
-# https://github.com/GSTIO/gst/blob/master/LICENSE
+# https://github.com/a6lian/gstlian/master/LICENSE
 ##########################################################################
 
    SOURCE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -120,8 +120,7 @@
 
    if [ ! -d "${SOURCE_DIR}/.git" ]; then
       printf "\\n\\tThis build script only works with sources cloned from git\\n"
-      printf "\\tPlease clone a new gst directory with 'git clone https://github.com/GSTIO/gst --recursive'\\n"
-      printf "\\tSee the wiki for instructions: https://github.com/GSTIO/gst/wiki\\n"
+      printf "\\tPlease clone a new gst directory with 'git clone https://github.com/a6lian/gstlian --recursive'\\n"
       exit 1
    fi
 
@@ -285,14 +284,11 @@
 
    TIME_END=$(( $(date -u +%s) - ${TIME_BEGIN} ))
 
-   printf "\n\n${bldred}\t _______  _______  _______ _________ _______\n"
-   printf '\t(  ____ \(  ___  )(  ____ \\\\__   __/(  ___  )\n'
-   printf "\t| (    \/| (   ) || (    \/   ) (   | (   ) |\n"
-   printf "\t| (__    | |   | || (_____    | |   | |   | |\n"
-   printf "\t|  __)   | |   | |(_____  )   | |   | |   | |\n"
-   printf "\t| (      | |   | |      ) |   | |   | |   | |\n"
-   printf "\t| (____/\| (___) |/\____) |___) (___| (___) |\n"
-   printf "\t(_______/(_______)\_______)\_______/(_______)\n${txtrst}"
+   printf "\n\n${bldred}\t ____ ____ _____ ___ ___\n"
+   printf '\t / ___/ ___|_   _|_ _/ _ \ \n'
+   printf "\t| |  _\___ \ | |  | | | | |\n"
+   printf "\t| |_| |___) || |  | | |_| |\n"
+   printf "\t \____|____/ |_| |___\___/ \n${txtrst}"
 
    printf "\\n\\tGSTIO has been successfully built. %02d:%02d:%02d\\n\\n" $(($TIME_END/3600)) $(($TIME_END%3600/60)) $(($TIME_END%60))
    printf "\\tTo verify your installation run the following commands:\\n"
